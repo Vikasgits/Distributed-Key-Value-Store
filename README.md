@@ -1,6 +1,3 @@
-# Distributed-Key-Value-Store
-Built a distributed in-memory key-value store in C#/.NET and React: consistent hashing with virtual nodes for sharding, per-node LRU eviction, and live node add/remove with key migration.
-
 # Distributed Key-Value Store
 
 A distributed in-memory key-value store built with C#/.NET and React. A **Master** service shards keys across several **Slave** cache nodes using **consistent hashing**. Each Slave evicts with an **LRU** policy. Nodes can be added or removed at runtime, and the affected keys are migrated automatically. A React dashboard shows each node's contents.
